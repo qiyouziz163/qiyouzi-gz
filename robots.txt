@@ -1,0 +1,21 @@
+# 企优咨官网 robots.txt
+# 允许所有搜索引擎爬虫抓取
+
+User-agent: *
+Allow: /
+
+# 站点地图
+Sitemap: https://your-domain.pages.dev/sitemap.xml
+
+# 常见AI爬虫配置
+User-agent: GPTBot
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Googlebot-Extended
+Allow: /
+
+# 限制爬虫频率（避免服务器压力）
+Crawl-delay: 1
