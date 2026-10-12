@@ -5,7 +5,7 @@ User-agent: *
 Allow: /
 
 # 站点地图
-Sitemap: https://your-domain.pages.dev/sitemap.xml
+Sitemap: https://qiyouziz163.github.io/qiyouzi-gz/sitemap.xml
 
 # 常见AI爬虫配置
 User-agent: GPTBot
@@ -19,3 +19,19 @@ Allow: /
 
 # 限制爬虫频率（避免服务器压力）
 Crawl-delay: 1
+
+# 允许Anthropic(Claude)AI爬虫
+User-agent: anthropic-ai
+Allow: /
+
+# 允许DuckDuckGo AI搜索爬虫
+User-agent: DuckDuckBot
+Allow: /
+
+# 允许You.com AI搜索爬虫
+User-agent: YouBot
+Allow: /
+
+# 允许Google GPT爬虫
+User-agent: GPTPad
+Allow: /
