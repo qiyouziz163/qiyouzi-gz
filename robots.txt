@@ -1,37 +1,99 @@
-# 企优咨官网 robots.txt
-# 允许所有搜索引擎爬虫抓取
+# robots.txt - AI爬虫全面放行配置
+# 网站: 企优咨（广州）咨询有限公司
+# 域名: https://qiyouziz163.github.io/qiyouzi-gz/
+# 更新时间: 2026-10-12
 
+# ============================
+# 默认规则：允许所有合规爬虫访问公开路径
+# ============================
 User-agent: *
 Allow: /
+Allow: /index.html
+Allow: /robots.txt
+Allow: /sitemap.xml
 
-# 站点地图
-Sitemap: https://qiyouziz163.github.io/qiyouzi-gz/sitemap.xml
+# ============================
+# 国内主流AI爬虫 - 显式允许抓取
+# ============================
 
-# 常见AI爬虫配置
+# 豆包（字节跳动）
+User-agent: Bytespider
+Allow: /
+
+# DeepSeek
+User-agent: DeepSeekBot
+Allow: /
+
+# 通义千问（阿里）
+User-agent: QwenBot
+Allow: /
+
+# 文心一言（百度）
+User-agent: ErnieBot
+Allow: /
+User-agent: BaiduSpider-AI
+Allow: /
+
+# 腾讯元宝
+User-agent: TencentAIspider
+Allow: /
+
+# Kimi（月之暗面）
+User-agent: MoonshotBot
+Allow: /
+
+# ============================
+# 海外AI爬虫 - 允许抓取
+# ============================
+
+# ChatGPT（OpenAI）
 User-agent: GPTBot
 Allow: /
 
-User-agent: Applebot
+# Claude（Anthropic）
+User-agent: Claude-Web
+Allow: /
+User-agent: ClaudeBot
 Allow: /
 
-User-agent: Googlebot-Extended
+# Google Gemini
+User-agent: Google-Extended
 Allow: /
 
-# 限制爬虫频率（避免服务器压力）
-Crawl-delay: 1
-
-# 允许Anthropic(Claude)AI爬虫
-User-agent: anthropic-ai
+# Perplexity AI
+User-agent: PerplexityBot
 Allow: /
 
-# 允许DuckDuckGo AI搜索爬虫
-User-agent: DuckDuckBot
+# Common Crawl（多个AI模型的数据源）
+User-agent: CCBot
 Allow: /
 
-# 允许You.com AI搜索爬虫
-User-agent: YouBot
+# Apple Intelligence
+User-agent: Applebot-Extended
 Allow: /
 
-# 允许Google GPT爬虫
-User-agent: GPTPad
+# ============================
+# 传统搜索引擎爬虫
+# ============================
+User-agent: Googlebot
 Allow: /
+User-agent: Baiduspider
+Allow: /
+User-agent: Bingbot
+Allow: /
+User-agent: Sogou web spider
+Allow: /
+User-agent: 360Spider
+Allow: /
+User-agent: YodaoBot
+Allow: /
+
+# ============================
+# 禁止抓取的路径（按需调整）
+# ============================
+Disallow:
+
+# ============================
+# 站点地图
+# ============================
+Sitemap: https://qiyouziz163.github.io/qiyouzi-gz/sitemap.xml
